@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winc Film finder</title>
+    <link href="resetstyle.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+  </head>
+  <body onload="showMovies()">
+    <div class="header">
+      <h1>Winc Film finder</h1>
+      <nav>
+        <ul class="filter_nav" onchange="changeSelection()">
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="all_movies"
+              name="filter_button"
+              value=""
+              checked
+            /><label for="all_movies">All movies</label>
+          </li>
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="avenger_movies"
+              name="filter_button"
+              value="Avenger"
+            /><label for="avenger_movies">Avenger movies</label>
+          </li>
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="x_men_movies"
+              name="filter_button"
+              value="X-Men"
+            /><label for="x_men_movies">X-men movies</label>
+          </li>
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="princess_movies"
+              name="filter_button"
+              value="Princess"
+            /><label for="princess_movies">Princess movies</label>
+          </li>
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="batman_movies"
+              name="filter_button"
+              value="Batman"
+            /><label for="batman_movies">Batman movies</label>
+          </li>
+          <li class="radio_button_nav">
+            <input
+              type="radio"
+              id="input"
+              name="filter_button"
+              value=""
+            /><label for="input"></label>
+            <input type="text" name="input_text" id="id_input_text" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="container">
+        <ul id="film_poster_container"></ul>
+      </div>
+    </main>
+  </body>
+</html>

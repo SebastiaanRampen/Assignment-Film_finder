@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.filter_nav {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.filter_nav > li {
+  margin: 10px 20px;
+}
+
+.container {
+  margin: 15px;
+}
+
+#film_poster_container {
+  top: 150px;
+  position: relative;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+}
+
+#film_poster_container > li > img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */
